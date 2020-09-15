@@ -9,7 +9,7 @@ const App = () => {
 	return (
 		<Container>
 			<BrowserRouter>
-				<Row className="justify-content-center">
+				<Row className="justify-content-center" style={{ marginTop: '35%' }}>
 					<Col xs={2}>
 						<Header />
 					</Col>
