@@ -1,21 +1,29 @@
 import React from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import Header from './Header';
-imoport;
+import Home from './Home';
 
 const App = () => {
 	return (
-		<div className="ui grid">
+		<Container>
 			<Router>
-				<div>
-					<Header />
-					<Switch>
-						<Route path="/" exact component={Home} />
-					</Switch>
-				</div>
+				<Row>
+					<Col xs={2}>
+						<Header />
+					</Col>
+					<Col xs={4}>
+						<Home />
+					</Col>
+					<Col xs={2}>
+						<Switch>
+							<Route path="/" exact component={Home} />
+						</Switch>
+					</Col>
+				</Row>
 			</Router>
-		</div>
+		</Container>
 	);
 };
 
