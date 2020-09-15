@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import Header from './Header';
 import Home from './Home';
+import Portfolio from './Portfolio';
 
 const App = () => {
 	return (
@@ -18,7 +19,7 @@ const App = () => {
 					</Col>
 					<Col xs={4}>
 						<Switch>
-							<Route path="/" exact component={Home} />
+							<Route path="/" exact component={Portfolio} />
 						</Switch>
 					</Col>
 				</Row>

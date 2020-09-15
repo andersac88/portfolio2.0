@@ -1,9 +1,10 @@
 import React from 'react';
+import Simpsonized from '../../images/Simpsonized.jpg';
 
 const Home = () => {
 	return (
 		<div>
-			<h1>Home</h1>
+			<img style={{ width: '100%' }} src={Simpsonized}></img>
 		</div>
 	);
 };
