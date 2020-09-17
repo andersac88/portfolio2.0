@@ -10,7 +10,7 @@ const Home = () => {
 
 	return (
 		<div className="home">
-			<img src={Simpsonized}></img>
+			<img src={Simpsonized} alt="Simpsonsized Andrew"></img>
 			<h1 style={ta}>Hi, I'm Andrew</h1>
 			<br />
 			<h5 style={ta}>
