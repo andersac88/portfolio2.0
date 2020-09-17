@@ -14,11 +14,13 @@ const Home = () => {
 			<h1 style={ta}>Hi, I'm Andrew</h1>
 			<br />
 			<h5 style={ta}>
-				I'm a freelance web developer with a passion for problem solving. I
-				enjoy working on complex projects with teams of driven individuals.
+				I'm a freelance web developer with a passion for tinkering. I enjoy
+				solving problems and working on complex projects.
 			</h5>
 			<br />
-			<h5 style={ta}>I also have an affinity for all things fuzzy</h5>
+			<h5 style={ta}>
+				I'm also a political junkie with and keen interest in world history
+			</h5>
 		</div>
 	);
 };
