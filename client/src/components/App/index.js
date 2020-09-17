@@ -2,22 +2,23 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import Header from './Header';
-import Home from './Home';
-import Portfolio from './Portfolio';
+import './style.css';
+import Header from '../Header';
+import Home from '../Home';
+import Portfolio from '../Portfolio';
 
 const App = () => {
 	return (
-		<Container>
+		<Container fluid>
 			<BrowserRouter>
-				<Row className="justify-content-center" style={{ marginTop: '35%' }}>
-					<Col xs={2}>
+				<Row className="justify-content-center" style={{ marginTop: '20%' }}>
+					<Col className="col" xs={1}>
 						<Header />
 					</Col>
-					<Col xs={4}>
+					<Col className="col" xs={5}>
 						<Home />
 					</Col>
-					<Col xs={4}>
+					<Col className="col" xs={5}>
 						<Switch>
 							<Route path="/" exact component={Portfolio} />
 						</Switch>
