@@ -6,6 +6,9 @@ import './style.css';
 import Header from '../Header';
 import Home from '../Home';
 import Portfolio from '../Portfolio';
+import Blog from '../Blog';
+import About from '../About';
+import Contact from '../Contact';
 
 const App = () => {
 	return (
@@ -20,7 +23,10 @@ const App = () => {
 					</Col>
 					<Col className="col" xs={5}>
 						<Switch>
-							<Route path="/" exact component={Portfolio} />
+							<Route path="/portfolio" exact component={Portfolio} />
+							<Route path="/blog" exact component={Blog} />
+							<Route path="/" exact component={About} />
+							<Route path="/contact" exact component={Contact} />
 						</Switch>
 					</Col>
 				</Row>
