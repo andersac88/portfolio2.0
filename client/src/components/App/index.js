@@ -14,7 +14,10 @@ const App = () => {
 	return (
 		<Container fluid>
 			<BrowserRouter>
-				<Row className="justify-content-center" style={{ marginTop: '20%' }}>
+				<Row
+					className="justify-content-center"
+					style={{ marginTop: '8%', marginBottom: '5%' }}
+				>
 					<Col className="col" xs={1}>
 						<Header />
 					</Col>

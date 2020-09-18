@@ -2,6 +2,8 @@ import React from 'react';
 import { Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+import './style.css';
+
 const Header = () => {
 	return (
 		<Nav defaultActiveKey="/" className="flex-column">

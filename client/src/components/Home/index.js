@@ -1,4 +1,11 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+	faFacebook,
+	faGithub,
+	faLinkedin,
+} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faFileDownload } from '@fortawesome/free-solid-svg-icons';
 
 import './style.css';
 import Simpsonized from '../../images/Simpsonized.jpg';
@@ -21,6 +28,17 @@ const Home = () => {
 			<h5 style={ta}>
 				I'm also a political junkie with and keen interest in world history
 			</h5>
+
+			<div className="banner">
+				<h4>e-mail: andersac@gmail.com</h4>
+			</div>
+			<div className="socialBanner">
+				<FontAwesomeIcon icon={faEnvelope} />
+				<FontAwesomeIcon icon={faFacebook} />
+				<FontAwesomeIcon icon={faGithub} />
+				<FontAwesomeIcon icon={faLinkedin} />
+				<FontAwesomeIcon icon={faFileDownload} />
+			</div>
 		</div>
 	);
 };
