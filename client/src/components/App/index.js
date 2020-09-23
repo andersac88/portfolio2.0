@@ -18,7 +18,7 @@ const App = () => {
 					className="justify-content-center"
 					style={{ marginTop: '8%', marginBottom: '5%' }}
 				>
-					<Col className="col" xs={1}>
+					<Col className="col" xs={1} style={{ paddingRight: '0' }}>
 						<Header />
 					</Col>
 					<Col className="col" xs={5}>

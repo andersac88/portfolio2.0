@@ -7,16 +7,16 @@ import './style.css';
 const Header = () => {
 	return (
 		<Nav defaultActiveKey="/" className="flex-column">
-			<Nav.Link as={Link} to="/">
+			<Nav.Link className="header" as={Link} to="/">
 				About
 			</Nav.Link>
-			<Nav.Link as={Link} to="/portfolio">
+			<Nav.Link className="header" as={Link} to="/portfolio">
 				Portfolio
 			</Nav.Link>
-			<Nav.Link as={Link} to="/blog">
+			<Nav.Link className="header" as={Link} to="/blog">
 				Blog
 			</Nav.Link>
-			<Nav.Link as={Link} to="/contact">
+			<Nav.Link className="header" as={Link} to="/contact">
 				Contact
 			</Nav.Link>
 		</Nav>
