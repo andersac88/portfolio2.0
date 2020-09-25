@@ -9,9 +9,10 @@ const Portfolio = () => {
 		const result = async () => {
 			const response = await axios.get('/api/portfolio');
 			setApps(response.data);
+			console.log(response.data);
 		};
 		result();
-	});
+	}, []);
 
 	const portfolioList = apps.map((app, i) => {
 		return (
@@ -19,20 +20,21 @@ const Portfolio = () => {
 				<Card.Header>
 					<Nav variant="tabs" defaultActiveKey="#first">
 						<Nav.Item>
-							<Nav.Link href="#first">Active</Nav.Link>
+							<Nav.Link href="#first">About</Nav.Link>
 						</Nav.Item>
 						<Nav.Item>
-							<Nav.Link href="#link">Link</Nav.Link>
+							<Nav.Link href="#link">See Code</Nav.Link>
 						</Nav.Item>
 						<Nav.Item>
+							{/* the disabled below needs to depend on which app is being listed; some only work in command line and therefore have no link*/}
 							<Nav.Link href="#disabled" disabled>
-								Disabled
+								Try App
 							</Nav.Link>
 						</Nav.Item>
 					</Nav>
 				</Card.Header>
 				<Card.Body>
-					<Card.Title>Special title treatment</Card.Title>
+					<Card.Title>{app.App}</Card.Title>
 					<Card.Text>
 						With supporting text below as a natural lead-in to additional
 						content.
@@ -45,7 +47,7 @@ const Portfolio = () => {
 
 	return (
 		<div>
-			<h1>Hi</h1>
+			<h1>{portfolioList}</h1>
 		</div>
 	);
 };

@@ -11,13 +11,16 @@ import About from '../About';
 import Contact from '../Contact';
 
 const App = () => {
-	const [height, setHeight] = useState(null);
+	const [height, setHeight] = useState();
 	const ref = useRef();
 	useEffect(() => {
 		console.log(ref.current.clientHeight);
-		const height = ref.current.clientHeight;
+		let height = ref.current.clientHeight;
 		setHeight(height);
 	}, [height]);
+
+	//something is off with the ref for height... occasionally differs by a few pixles; may have to try this as a class component...
+	//ask stackoverflow regardless if above solution works
 
 	return (
 		<Container fluid>
