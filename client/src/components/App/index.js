@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -11,6 +11,14 @@ import About from '../About';
 import Contact from '../Contact';
 
 const App = () => {
+	const [height, setHeight] = useState(null);
+	const ref = useRef();
+	useEffect(() => {
+		console.log(ref.current.clientHeight);
+		const height = ref.current.clientHeight;
+		setHeight(height);
+	}, [height]);
+
 	return (
 		<Container fluid>
 			<BrowserRouter>
@@ -21,10 +29,14 @@ const App = () => {
 					<Col className="col" xs={1} style={{ paddingRight: '0' }}>
 						<Header />
 					</Col>
-					<Col className="col" xs={5}>
+					<Col className="col" xs={5} ref={ref}>
 						<Home />
 					</Col>
-					<Col className="col" xs={5}>
+					<Col
+						className="col"
+						xs={5}
+						style={{ overflowY: 'scroll', height: height }}
+					>
 						<Switch>
 							<Route path="/portfolio" exact component={Portfolio} />
 							<Route path="/blog" exact component={Blog} />

@@ -8,7 +8,6 @@ const Blog = () => {
 		const result = async () => {
 			const response = await axios.get('/api/blog');
 			setBlogs(response.data);
-			console.log(blogs);
 		};
 		result();
 	}, []);
