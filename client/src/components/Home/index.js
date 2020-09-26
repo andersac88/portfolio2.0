@@ -30,14 +30,14 @@ const Home = () => {
 			</h5>
 
 			<div className="banner">
-				<h4>e-mail: andersac@gmail.com</h4>
+				<h4>
+					email: <a href="mailto: andersac88@gmail.com">andersac@gmail.com</a>
+				</h4>
 			</div>
 			<div className="socialBanner">
-				<FontAwesomeIcon icon={faEnvelope} />
 				<FontAwesomeIcon icon={faFacebook} />
 				<FontAwesomeIcon icon={faGithub} />
 				<FontAwesomeIcon icon={faLinkedin} />
-				<FontAwesomeIcon icon={faFileDownload} />
 			</div>
 		</div>
 	);
