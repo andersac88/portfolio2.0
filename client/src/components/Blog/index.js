@@ -16,11 +16,7 @@ const Blog = () => {
 		return <div>{blog.Date}</div>;
 	});
 
-	return (
-		<div>
-			<h1>{blogPosts}</h1>
-		</div>
-	);
+	return <div>{blogPosts}</div>;
 };
 
 export default Blog;

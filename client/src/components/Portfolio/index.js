@@ -16,7 +16,7 @@ const Portfolio = () => {
 
 	const portfolioList = apps.map((app, i) => {
 		return (
-			<Card>
+			<Card style={{ paddingTop: '1em' }}>
 				<Card.Header>
 					<Nav variant="tabs" defaultActiveKey="#first">
 						<Nav.Item>
@@ -27,7 +27,10 @@ const Portfolio = () => {
 						</Nav.Item>
 						<Nav.Item>
 							{/* the disabled below needs to depend on which app is being listed; some only work in command line and therefore have no link*/}
-							<Nav.Link href="#disabled" disabled>
+							<Nav.Link
+								href="#disabled"
+								disabled={app.appURL === '#' ? true : false}
+							>
 								Try App
 							</Nav.Link>
 						</Nav.Item>
@@ -35,10 +38,7 @@ const Portfolio = () => {
 				</Card.Header>
 				<Card.Body>
 					<Card.Title>{app.App}</Card.Title>
-					<Card.Text>
-						With supporting text below as a natural lead-in to additional
-						content.
-					</Card.Text>
+					<Card.Text>{app.Details}</Card.Text>
 					<Button variant="primary">Go somewhere</Button>
 				</Card.Body>
 			</Card>
@@ -47,7 +47,8 @@ const Portfolio = () => {
 
 	return (
 		<div>
-			<h1>{portfolioList}</h1>
+			<h1>Portfolio</h1>
+			{portfolioList}
 		</div>
 	);
 };
