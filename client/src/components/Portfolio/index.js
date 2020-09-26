@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Nav, Col, Row, Image } from 'react-bootstrap';
 import axios from 'axios';
+import ReactHtmlParser from 'react-html-parser';
 
 const Portfolio = () => {
 	const [apps, setApps] = useState([]);
@@ -16,7 +17,7 @@ const Portfolio = () => {
 
 	const portfolioList = apps.map((app, i) => {
 		return (
-			<Card bg="light" style={{ marginTop: '1em' }}>
+			<Card key={i} bg="light" style={{ marginTop: '1em' }}>
 				<Card.Header>
 					<Nav variant="tabs" defaultActiveKey="#first">
 						<Nav.Item>
@@ -42,7 +43,7 @@ const Portfolio = () => {
 							<Image src={require(`../../images/${app.Image}.png`)} thumbnail />
 						</Col>
 						<Col>
-							<Card.Text>{app.Details}</Card.Text>
+							<Card.Text> {ReactHtmlParser(app.Details)}</Card.Text>
 						</Col>
 					</Row>
 				</Card.Body>
