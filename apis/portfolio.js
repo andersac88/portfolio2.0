@@ -1,7 +1,7 @@
 const Applications = [
 	{
 		App: 'Hangman',
-		Image: './Assets/Images/Medieval Hangman.png',
+		Image: 'MedievalHangman',
 		Title: 'Medieval Hangman',
 		appURL: 'https://andersac88.github.io/Word-Guess-Game/',
 		codeURL: 'https://github.com/andersac88/Word-Guess-Game',
@@ -13,7 +13,7 @@ const Applications = [
 	},
 	{
 		App: 'Giftastic',
-		Image: './Assets/Images/Simpsons.png',
+		Image: 'Simpsons',
 		Title: 'Giftastic Simpsons',
 		appURL: 'https://andersac88.github.io/GifTastic/',
 		codeURL: 'https://github.com/andersac88/GifTastic/',
@@ -23,7 +23,7 @@ const Applications = [
 	},
 	{
 		App: 'Trivia',
-		Image: './Assets/Images/WW2 Trivia.png',
+		Image: 'WW2 Trivia',
 		Title: 'WWII Trivia',
 		appURL: 'https://andersac88.github.io/TriviaGame/',
 		codeURL: 'https://github.com/andersac88/TriviaGame/',
@@ -33,7 +33,7 @@ const Applications = [
 	},
 	{
 		App: 'Train Scheduler',
-		Image: './Assets/Images/TrainScheduler.png',
+		Image: 'TrainScheduler',
 		Title: 'Train Scheduler',
 		appURL: 'https://andersac88.github.io/Train-Scheduler/',
 		codeURL: 'https://github.com/andersac88/Train-Scheduler/',
@@ -44,7 +44,7 @@ const Applications = [
 	},
 	{
 		App: 'LIRI Bot',
-		Image: './Assets/Images/liribot.png',
+		Image: 'liribot',
 		Title: 'Language Interpretation and Recognition Interface Bot',
 		appURL: '#',
 		codeURL: 'https://github.com/andersac88/LIRI_Bot',
@@ -54,7 +54,7 @@ const Applications = [
 	},
 	{
 		App: 'Bamazon',
-		Image: './Assets/Images/Bamazon.png',
+		Image: 'Bamazon',
 		Title: 'Bamazon - MySQL Inquirer',
 		appURL: '#',
 		codeURL: 'https://github.com/andersac88/Node.js-MySQL',
@@ -64,7 +64,7 @@ const Applications = [
 	},
 	{
 		App: 'Friend Finder',
-		Image: './Assets/Images/friendfinder.png',
+		Image: 'friendfinder',
 		Title: 'Friend Finder',
 		appURL: 'https://warm-fortress-99870.herokuapp.com/',
 		codeURL: 'https://github.com/andersac88/Friend_Finder',
@@ -74,7 +74,7 @@ const Applications = [
 	},
 	{
 		App: 'Concert Buddy',
-		Image: './Assets/Images/ConcertBuddy.png',
+		Image: 'ConcertBuddy',
 		Title: 'Concert Budddy',
 		appURL: 'https://concertbuddy2.herokuapp.com',
 		codeURL: 'https://github.com/andersac88/ConcertBuddy',
@@ -85,7 +85,7 @@ const Applications = [
 	},
 	{
 		App: 'Political Scraper',
-		Image: './Assets/Images/NewsScraper.png',
+		Image: 'NewsScraper',
 		Title: 'Political Scraper',
 		appURL: 'https://political-scraper.herokuapp.com/',
 		codeURL: 'https://github.com/andersac88/News_Scraper',
@@ -96,7 +96,7 @@ const Applications = [
 	},
 	{
 		App: 'Peerless Vending',
-		Image: './Assets/Images/Peerless.png',
+		Image: 'Peerless',
 		Title: 'Peerless Vending',
 		appURL: 'https://www.peerlessvending.com/',
 		codeURL: 'https://github.com/andersac88/PeerlessVending',

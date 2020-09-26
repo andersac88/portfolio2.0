@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Card, Nav, Button } from 'react-bootstrap';
+import { Card, Nav, Col, Row, Image } from 'react-bootstrap';
 import axios from 'axios';
+
+const images = require.context('../../images/', true);
 
 const Portfolio = () => {
 	const [apps, setApps] = useState([]);
@@ -38,8 +40,14 @@ const Portfolio = () => {
 				</Card.Header>
 				<Card.Body>
 					<Card.Title>{app.App}</Card.Title>
-					<Card.Text>{app.Details}</Card.Text>
-					<Button variant="primary">Go somewhere</Button>
+					<Row>
+						<Col>
+							<Image src={require(`../../images/${app.Image}.png`)} rounded />
+						</Col>
+						<Col>
+							<Card.Text>{app.Details}</Card.Text>
+						</Col>
+					</Row>
 				</Card.Body>
 			</Card>
 		);
