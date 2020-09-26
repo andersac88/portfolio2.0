@@ -16,7 +16,7 @@ const Portfolio = () => {
 
 	const portfolioList = apps.map((app, i) => {
 		return (
-			<Card style={{ paddingTop: '1em' }}>
+			<Card bg="light" style={{ marginTop: '1em' }}>
 				<Card.Header>
 					<Nav variant="tabs" defaultActiveKey="#first">
 						<Nav.Item>
@@ -27,7 +27,7 @@ const Portfolio = () => {
 						</Nav.Item>
 						<Nav.Item>
 							<Nav.Link
-								href="#disabled"
+								href={app.appURL === '#' ? '#disabled' : app.appURL}
 								disabled={app.appURL === '#' ? true : false}
 							>
 								Try App
@@ -39,7 +39,7 @@ const Portfolio = () => {
 					<Card.Title>{app.App}</Card.Title>
 					<Row>
 						<Col>
-							<Image src={require(`../../images/${app.Image}.png`)} rounded />
+							<Image src={require(`../../images/${app.Image}.png`)} thumbnail />
 						</Col>
 						<Col>
 							<Card.Text>{app.Details}</Card.Text>
@@ -52,7 +52,7 @@ const Portfolio = () => {
 
 	return (
 		<div>
-			<h1>Portfolio</h1>
+			<h1 style={{ textAlign: 'center' }}>Portfolio</h1>
 			{portfolioList}
 		</div>
 	);

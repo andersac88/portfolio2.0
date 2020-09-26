@@ -19,10 +19,6 @@ const App = () => {
 		setHeight(height);
 	}, [height]);
 
-	//something is off with the ref for height...  differs by a few pixles from desired height; may have to try this as a class component...
-	// Believe to be solved === potential solution ref.current.currentHeight vs ref.current.offsetHeight
-	// look up the difference
-
 	return (
 		<Container fluid>
 			<BrowserRouter>
