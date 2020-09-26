@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Card, Nav, Col, Row, Image } from 'react-bootstrap';
 import axios from 'axios';
 
-const images = require.context('../../images/', true);
-
 const Portfolio = () => {
 	const [apps, setApps] = useState([]);
 
@@ -28,7 +26,6 @@ const Portfolio = () => {
 							<Nav.Link href="#link">See Code</Nav.Link>
 						</Nav.Item>
 						<Nav.Item>
-							{/* the disabled below needs to depend on which app is being listed; some only work in command line and therefore have no link*/}
 							<Nav.Link
 								href="#disabled"
 								disabled={app.appURL === '#' ? true : false}
