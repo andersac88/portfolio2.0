@@ -5,6 +5,7 @@ import {
 	faGithub,
 	faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 import './style.css';
 import Simpsonized from '../../images/Simpsonized.jpg';
@@ -34,9 +35,13 @@ const Home = () => {
 				</h4>
 			</div>
 			<div className="socialBanner">
-				<FontAwesomeIcon icon={faFacebook} />
-				<FontAwesomeIcon icon={faGithub} />
-				<FontAwesomeIcon icon={faLinkedin} />
+				<FontAwesomeIcon icon={faFacebook} href="" />
+				<Link to="https://github.com/andersac88/">
+					<FontAwesomeIcon icon={faGithub} />
+				</Link>
+				<Link to="https://www.linkedin.com/in/andrewcandersen">
+					<FontAwesomeIcon icon={faLinkedin} />
+				</Link>
 			</div>
 		</div>
 	);
