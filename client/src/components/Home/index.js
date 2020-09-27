@@ -5,7 +5,6 @@ import {
 	faGithub,
 	faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faFileDownload } from '@fortawesome/free-solid-svg-icons';
 
 import './style.css';
 import Simpsonized from '../../images/Simpsonized.jpg';
