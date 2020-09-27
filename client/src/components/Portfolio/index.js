@@ -24,7 +24,7 @@ const Portfolio = () => {
 							<Nav.Link href="#first">About</Nav.Link>
 						</Nav.Item>
 						<Nav.Item>
-							<Nav.Link href="#link">See Code</Nav.Link>
+							<Nav.Link href={app.codeURL}>See Code</Nav.Link>
 						</Nav.Item>
 						<Nav.Item>
 							<Nav.Link
