@@ -35,13 +35,15 @@ const Home = () => {
 				</h4>
 			</div>
 			<div className="socialBanner">
-				<FontAwesomeIcon icon={faFacebook} href="" />
-				<Link to="https://github.com/andersac88/">
+				<Link>
+					<FontAwesomeIcon icon={faFacebook} />
+				</Link>
+				<a href="https://github.com/andersac88/">
 					<FontAwesomeIcon icon={faGithub} />
-				</Link>
-				<Link to="https://www.linkedin.com/in/andrewcandersen">
+				</a>
+				<a href="https://www.linkedin.com/in/andrewcandersen">
 					<FontAwesomeIcon icon={faLinkedin} />
-				</Link>
+				</a>
 			</div>
 		</div>
 	);

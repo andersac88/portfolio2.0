@@ -35,7 +35,7 @@ const App = () => {
 					<Col
 						className="col"
 						xs={5}
-						style={{ overflowY: 'scroll', height: height }}
+						style={{ overflowY: 'scroll', height: height, maxHeight: height }}
 					>
 						<Switch>
 							<Route path="/portfolio" exact component={Portfolio} />
