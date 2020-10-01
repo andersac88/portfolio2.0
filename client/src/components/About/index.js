@@ -3,6 +3,7 @@ import { Button, Col, Row } from 'react-bootstrap';
 import file from '../../images/gravel.png';
 
 const About = () => {
+	/* Want to delay the rendering of this so that Home Component still establishes size; consider establshing state of visibile (or another css style) and have it reset to visible with a timeout function*/
 	const resume = () => {
 		return (
 			<>
